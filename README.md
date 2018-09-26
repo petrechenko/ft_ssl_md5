@@ -3,7 +3,9 @@
 An introduction to cryptographic hashing algorithms
 
 A cryptographic hash function is a special class of hash function that has certain propertiesi which make it suitable for use in cryptography. It is a mathematical algorithm that maps data of arbitrary size to a bit string of a fixed size. It is designed to also be a one-way function, that is, a function which is infeasible to invert. The only way to recreate the input data from an ideal cryptographic hash function’s output is to attempt a brute-force search of possible inputs to see if they produce a match, or use a rainbow table of matched hashes. Bruce Schneier has called one-way hash functions "the workhorses of modern cryptography". The input data is often called the message, and the output (the hash value or hash) is often called the message digest or simply the digest.
+
 The ideal cryptographic hash function has five main properties:
+
 • it is deterministic, so the same message always results in the same hash
 • it is quick to compute the hash value for any given message
 • it is infeasible to generate a message from its digest except by trying all possible messages
@@ -34,8 +36,8 @@ Do not pity the dead, Harry.
 >
 > echo "Pity the living." | ./ft_ssl md5 -q -r
 e20c3b973f63482a778f3fd1869b7f25
-
-./ft_ssl sha256 -s "wubba lubba dub dub"
+>
+> ./ft_ssl sha256 -s "wubba lubba dub dub"
 SHA256 ("wubba lubba dub dub") = 23a0944d11b5a54f1970492b5265c732044ae824b7d5656acb193e7f0e51e5fa
 
 Useful Saurces:
